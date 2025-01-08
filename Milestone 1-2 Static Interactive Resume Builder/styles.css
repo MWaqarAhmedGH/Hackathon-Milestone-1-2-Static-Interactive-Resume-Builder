@@ -1,0 +1,128 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.resume-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: rgb(8, 8, 8);
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 30px;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #4caf50;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #a7a6f8;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #000;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+ul li:hover {
+  transform: translateX(10px);
+  background: #4caf50;
+  color: #000;
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  border: 3px solid #4caf50;
+}
+
+/* Buttons */
+.buttons-container {
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #2e7d32;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  ul li {
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
